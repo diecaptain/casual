@@ -1,6 +1,13 @@
 #!/usr/bin/perl -w
 #program to assess a class with n people.
+#The script follows simple fuzzy logic
+#Defuzzification values are the improving factors to be specified
+#Script can be used to check the grace marks to be awarded on a general scale
+#script can be used to check the increase or decrease in assignments of a class
+#Author Name : Kranthi K. Pamarthi
+#Author Alias : diecaptain
 #Alpha Version 1.0
+
 print "Enter the marks into the marks array here : \n";
 chomp(@marks = <STDIN>);
 print "\nEnter the maximum marks of the test here : \n";
