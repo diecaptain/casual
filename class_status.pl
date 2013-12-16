@@ -7,6 +7,7 @@
 #Author Name : Kranthi K. Pamarthi
 #Author Alias : diecaptain
 #Alpha Version 1.0
+#The fuzzy system can be further elaborated by using more phases than just three i have used.
 
 print "Enter the marks into the marks array here : \n";
 chomp(@marks = <STDIN>);

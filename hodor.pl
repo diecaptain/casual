@@ -20,7 +20,7 @@ while ($correct eq "maybe")
              $correct = "yes";
              # yes!
              }
-              elsif ($i < 3)
+              elsif ($i < $limit)
                   {
                    # more words to look at?
                    $i = $i + 1;
