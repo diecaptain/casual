@@ -165,7 +165,7 @@ if( $ass == '0' )
        }
         elsif( $ass > '0' )
             {
-             print "THe class performance is poor. This implies that the number of assignements are to be increased by an approximate of $ass numbers. Pick up your mettle students!!! \n\n";
+             print "The class performance is poor. This implies that the number of assignements are to be increased by an approximate of $ass numbers. Pick up your mettle students!!! \n\n";
             }
              print "\nThat is all folks!!!\n";
 #########################################################################
