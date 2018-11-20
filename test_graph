@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+#graph test one
+use GD::Graph::Cartesian;
+  my $obj=GD::Graph::Cartesian->new(height=>400, width=>800);
+  $obj->addPoint(50=>25);
+  $obj->addLine($x0=>$y0, $x1=>$y1);
+  $obj->addRectangle($x0=>$y0, $x1=>$y1);
+  $obj->addString($x=>$y, 'Hello World!');
+  $obj->font(gdSmallFont);  #sets the current font from GD exports
+  $obj->color('blue');      #sets the current color from Graphics::ColorNames
+  $obj->color([0,0,0]);     #sets the current color [red,green,blue]
+  print $obj->draw;
