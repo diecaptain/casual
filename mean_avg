@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+#program to find average mean of a crisp set
+@marks = qw(1 4 5 7 2); #marks of students in the exam
+$g = 10; #maximum marks
+$n = @marks;
+$h = $g/2;
+print "The maximum marks for the exam are $g \n";
+print "The total number of students appeared for the test are $n \n";
+print "The individual marks of students are @marks \n";
+for ($i = 0;$i < $n;$i++)
+  {
+   if ( $marks[$i] <= $h )
+    {
+     $mem_avg[$i] = $marks[$i]/$h;
+    }
+     elsif ( $marks[$i] > $h )
+         { 
+          $mem_avg[$i] = 2-$marks[$i]/$h;
+          }
+    }
+     print "The average membership functions of the students are : @mem_avg \n ";
+# degree of averageness calculation
+$sum = 0;
+foreach (@mem_avg)
+      {
+	  $deg_avg += $_;
+      }
+      print "The degree of averageness is : $deg_avg \n";
