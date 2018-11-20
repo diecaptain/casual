@@ -1,5 +1,4 @@
 #!/usr/bin/perl -w
-#final script for santhosham
 #script to check hex values of a string in pi and output
 #use warnings;
 #use strict;
@@ -52,7 +51,7 @@ for ( $i = 0;$i < @wish;$i++ )
    print "$alpha is found here after $out decimals in the value of PI\n";
    $oldPATH = $ENV{"PATH"};
    $ENV{"PATH"} = "/usr/games";
-   system " (xcowsay $alpha is found here after $out decimals in the value of PI)&" || die "connot execute :$!"
+   system " (xcowsay $alpha is found here after $out decimals in the value of PI)&" || die "connot execute :$!";
                $ENV{"PATH"} = $oldPATH;
    sleep 2;
                  } 
