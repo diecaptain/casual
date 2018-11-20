@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+#program to find membership functions of the lowness of a crisp set
+#@marks = qw(1 4 5 7 2); #marks of students in the exam
+print "Enter the marks into the marks array here : \n";
+chomp(@marks = <STDIN>);
+print "Enter the maximum marks of the test here : \n";
+chomp($g = <STDIN>); #maximum marks
+$n = @marks;
+$h = $g/2;
+print "The maximum marks for the exam are $g \n";
+print "The total number of students appeared for the test are $n \n";
+print "The individual marks of students are @marks \n";
+for ($i = 0;$i < $n;$i++)
+  {
+   if ( $marks[$i] <= $h )
+    {
+     $mem_low[$i] = $marks[$i]/$h;
+    }
+     elsif ( $marks[$i] > $h )
+         { 
+          $mem_low[$i] = '0';
+          }
+    }
+     print "The low membership functions of the students are : @mem_low \n ";
+$sum = 0;
+foreach (@mem_low)
+      {
+	  $deg_low += $_;
+      }
+      print "The degree of lowness is : $deg_low \n";
